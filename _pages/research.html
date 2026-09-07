@@ -1,0 +1,44 @@
+---
+layout: archive
+title: "Research"
+permalink: /research/
+author_profile: true
+---
+
+{% include base_path %}
+
+<p class="page__lead">
+  My work is in urban and housing economics and in the political economy of migration. Drafts not yet
+  posted are available on request — write to <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.
+</p>
+
+{% for category in site.publication_category %}
+  {% assign papers = site.publications | where: "category", category[0] | sort: "date" | reverse %}
+  {% if papers.size > 0 %}
+    <section class="paper-section">
+      <h2 class="paper-section__title">{{ category[1].title }}</h2>
+      {% for paper in papers %}
+        <div class="paper">
+          <h3 class="paper__title">
+            <a href="{{ base_path }}{{ paper.url }}">{{ paper.title }}</a>
+          </h3>
+          {% if paper.coauthors and paper.coauthors != "" %}
+            <p class="paper__authors">{{ paper.coauthors }}</p>
+          {% endif %}
+          {% if paper.venue and paper.venue != "" %}
+            <p class="paper__venue">{{ paper.venue }}</p>
+          {% endif %}
+          <details class="paper__details">
+            <summary>Abstract</summary>
+            <div class="paper__abstract">{{ paper.content | markdownify }}</div>
+          </details>
+          <p class="paper__links">
+            {% if paper.paperurl %}<a class="paper__link" href="{{ paper.paperurl }}">Paper</a>{% endif %}
+            {% if paper.slidesurl %}<a class="paper__link" href="{{ paper.slidesurl }}">Slides</a>{% endif %}
+            {% if paper.paperurl == nil and paper.draft_status %}<span class="paper__note">{{ paper.draft_status }}</span>{% endif %}
+          </p>
+        </div>
+      {% endfor %}
+    </section>
+  {% endif %}
+{% endfor %}

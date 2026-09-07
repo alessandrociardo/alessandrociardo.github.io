@@ -1,0 +1,63 @@
+/* ==========================================================================
+    CIARDO THEME - LIGHT VERSION
+    Set `site_theme: "ciardo"` in _config.yml to use this palette.
+    ========================================================================== */
+
+/* Typography overrides (these are read by the layout partials imported later) */
+$serif                      : "Source Serif 4", Georgia, "Times New Roman", serif;
+$sans-serif                 : -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$global-font-family         : $sans-serif;
+$header-font-family         : $serif;
+$caption-font-family        : $sans-serif;
+
+/* Color codes used for the theme */
+$primary-color              : #2f5d7c;
+$gray                       : #6d7780;
+$dark-gray                  : mix(#000, $gray, 45%);
+$darker-gray                : mix(#000, $gray, 65%);
+$light-gray                 : mix(#fff, $gray, 55%);
+$lighter-gray               : mix(#fff, $gray, 88%);
+
+/* Color codes used for the site */
+$danger-color               : #c0392b;
+$info-color                 : #2f5d7c;
+$notice-color               : #6d7780;
+$success-color              : #3f8f5f;
+$warning-color              : #c8860d;
+
+/* Other basic settings for the template */
+$border-radius              : 3px;
+$box-shadow                 : 0 1px 2px rgba(0, 0, 0, 0.06);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Light theme for the site */
+:root {
+    --global-base-color                 : #{$primary-color};
+    --global-bg-color                   : #fdfdfc;
+    --global-footer-bg-color            : #f4f4f2;
+    --global-border-color               : #e4e5e3;
+    --global-dark-border-color          : #cfd1ce;
+    --global-code-background-color      : #f6f6f4;
+    --global-code-text-color            : #{$darker-gray};
+    --global-fig-caption-color          : #{$gray};
+    --global-link-color                 : #2f5d7c;
+    --global-link-color-hover           : #1b3b52;
+    --global-link-color-visited         : #4d7290;
+    --global-masthead-link-color        : #3a4048;
+    --global-masthead-link-color-hover  : #2f5d7c;
+    --global-text-color                 : #24282d;
+    --global-text-color-light           : #6d7780;
+    --global-thead-color                : #f0f0ee;
+
+    /* Custom tokens used by _custom.scss */
+    --accent-color                      : #2f5d7c;
+    --accent-soft-bg                    : #eef3f7;
+    --accent-soft-border                : #cddce7;
+    --muted-text-color                  : #626b74;
+    --rule-color                        : #e4e5e3;
+}

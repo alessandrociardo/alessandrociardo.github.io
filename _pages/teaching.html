@@ -7,6 +7,20 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+{% assign courses = site.teaching | sort: "date" | reverse %}
+{% if courses.size > 0 %}
+  {% for course in courses %}
+    <div class="course">
+      <h3 class="course__title">
+        <a href="{{ base_path }}{{ course.url }}">{{ course.title }}</a>
+      </h3>
+      <p class="course__meta">
+        {% if course.role %}{{ course.role }} &middot; {% endif %}{{ course.type }}<br />
+        {{ course.venue }}{% if course.term %} &middot; {{ course.term }}{% endif %}
+      </p>
+      {% if course.excerpt %}<p class="course__excerpt">{{ course.excerpt | markdownify | strip_html }}</p>{% endif %}
+    </div>
+  {% endfor %}
+{% else %}
+  <p>Teaching experience will be listed here.</p>
+{% endif %}

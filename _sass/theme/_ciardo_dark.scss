@@ -1,0 +1,62 @@
+/* ==========================================================================
+    CIARDO THEME - DARK VERSION
+    ========================================================================== */
+
+/* Color codes used for the theme */
+$primary-color              : #8ab6d4;
+$gray                       : #6d7780;
+$dark-gray                  : mix(#000, $gray, 45%);
+$darker-gray                : mix(#000, $gray, 65%);
+$light-gray                 : mix(#fff, $gray, 55%);
+
+$background                 : #1d2126;
+$background-light           : mix(#fff, $background, 12%);
+$background-lighter         : mix(#fff, $background, 20%);
+$text                       : #e6e8ea;
+$link                       : #8ab6d4;
+$link-dark                  : mix(#fff, $link, 20%);
+$link-light                 : mix(#fff, $link, 35%);
+
+/* Color codes used for the site */
+$danger-color               : #e07a6f;
+$info-color                 : #8ab6d4;
+$notice-color               : #6d7780;
+$success-color              : #6fbf8d;
+$warning-color              : #e0b357;
+
+/* Other basic settings for the template */
+$border-radius              : 3px;
+$box-shadow                 : 0 1px 2px rgba(0, 0, 0, 0.3);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Dark theme for the site */
+html[data-theme="dark"] {
+    --global-base-color                 : #{$primary-color};
+    --global-bg-color                   : #{$background};
+    --global-footer-bg-color            : #171a1e;
+    --global-border-color               : #{$background-lighter};
+    --global-dark-border-color          : #{$background-light};
+    --global-code-background-color      : #{$background-light};
+    --global-code-text-color            : #{$text};
+    --global-fig-caption-color          : #a9b0b7;
+    --global-link-color                 : #{$link};
+    --global-link-color-hover           : #{$link-dark};
+    --global-link-color-visited         : #{$link-light};
+    --global-masthead-link-color        : #{$text};
+    --global-masthead-link-color-hover  : #{$primary-color};
+    --global-text-color                 : #{$text};
+    --global-text-color-light           : #a9b0b7;
+    --global-thead-color                : #{$background-lighter};
+
+    /* Custom tokens used by _custom.scss */
+    --accent-color                      : #8ab6d4;
+    --accent-soft-bg                    : #232a31;
+    --accent-soft-border                : #33414d;
+    --muted-text-color                  : #a2aab2;
+    --rule-color                        : #2c3238;
+}

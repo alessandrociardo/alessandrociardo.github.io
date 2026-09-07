@@ -35,7 +35,10 @@ layout: default
         {% endif %}
         
         {% if page.collection == 'teaching' %}
-          <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+          <p class="course__meta">{% if page.role %}{{ page.role }} &middot; {% endif %}{{ page.type }}<br />{{ page.venue }}{% if page.term %} &middot; {{ page.term }}{% endif %}</p>
+        {% elsif page.collection == 'publications' %}
+          {% if page.coauthors and page.coauthors != "" %}<p class="paper__authors">{{ page.coauthors }}</p>{% endif %}
+          {% if page.status and page.status != "" %}<p class="paper__status">{{ page.status }}</p>{% endif %}
         {% elsif page.venue and page.date %}
           <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}
@@ -46,6 +49,14 @@ layout: default
 
       <section class="page__content" itemprop="text">
         {{ content }}
+
+        {% if page.collection == 'publications' %}
+          <p class="paper__links">
+            {% if page.paperurl %}<a class="paper__link" href="{{ page.paperurl }}">Paper</a>{% endif %}
+            {% if page.slidesurl %}<a class="paper__link" href="{{ page.slidesurl }}">Slides</a>{% endif %}
+            {% if page.paperurl == nil and page.draft_status %}<span class="paper__note">{{ page.draft_status }}</span>{% endif %}
+          </p>
+        {% endif %}
 
         {% if page.citation and page.paperurl and page.slidesurl and page.bibtexurl %}
           <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
