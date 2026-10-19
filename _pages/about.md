@@ -15,7 +15,7 @@ redirect_from:
 
 I am a PhD candidate in Economics at the **University of Barcelona** and a predoctoral researcher at
 the **Barcelona Institute of Economics (IEB)**, where I am supervised by
-[Jordi Jofre-Monseny](https://www.ub.edu/school-economics/jordi-jofre-monseny/) and
+[Jordi Jofre-Monseny](https://sites.google.com/site/jordijofresite/) and
 [Andreu Arenas-Jal](https://sites.google.com/view/andreuarenas).
 
 My research is in **urban and housing economics**. I use administrative microdata and quasi-experimental
