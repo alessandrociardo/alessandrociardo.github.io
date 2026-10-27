@@ -7,11 +7,11 @@ date: 2026-09-01
 coauthors: ""
 status: "Job Market Paper"
 draft_status: "Draft available upon request"
-excerpt: "When a binding rent cap removes price as a rationing device, does the composition of tenants who obtain a lease change?"
+excerpt: "When a binding rent cap is introduced in a regional rental market, are immigrant tenants screened out?"
 ---
 
-When a binding rent cap removes price as a rationing device, does the composition of tenants who
-obtain a lease change? Using the universe of registered rental contracts in Catalonia and a
-difference-in-discontinuities design around Spain's 2023 housing law, I find no uniform shift in the
-foreign share of tenants, but tighter tenant selection concentrated among the corporate landlords
-for whom the cap binds hardest.
+When a binding rent cap is introduced in a regional rental market, are immigrant tenants screened
+out? Using the universe of registered rental contracts in Catalonia and a regression discontinuity
+in time design around Spain's 2023 housing law, I find a substantial decrease in immigrant tenants'
+share in houses owned by corporations (−7 p.p.), with evidence of reallocation to unregulated
+sectors of the market.

@@ -9,9 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-<!-- When the updated CV is ready, drop the PDF in files/ and uncomment the line below.
 <p class="cv-download"><a class="paper__link" href="{{ base_path }}/files/cv-alessandro-ciardo.pdf">Download CV (PDF)</a></p>
--->
 
 <h2 class="cv-section">Current position</h2>
 <div class="cv-entry">
@@ -127,6 +125,18 @@ redirect_from:
   <div class="cv-entry__date">2026</div>
 </div>
 <div class="cv-entry">
+  <div class="cv-entry__body">Housing Matters: How did we get here and where are we going? (CaCHE), Glasgow</div>
+  <div class="cv-entry__date">2026</div>
+</div>
+<div class="cv-entry">
+  <div class="cv-entry__body">PhD-Economics Virtual Seminar, online</div>
+  <div class="cv-entry__date">2026</div>
+</div>
+<div class="cv-entry">
+  <div class="cv-entry__body">IEB Internal Work in Progress Seminar, Barcelona</div>
+  <div class="cv-entry__date">2026</div>
+</div>
+<div class="cv-entry">
   <div class="cv-entry__body">BeNA Winter Workshop, Berlin (poster)</div>
   <div class="cv-entry__date">2025</div>
 </div>
@@ -161,21 +171,21 @@ redirect_from:
   </div>
 </div>
 
-{% comment %}
-REFERENCES — hidden for now. To show them: delete the Liquid comment tag on the line above and the
-matching closing tag below, then fill in the names. Add or remove a "refs__item" block per referee.
-
 <h2 class="cv-section">References</h2>
 <div class="refs">
   <div class="refs__item">
-    <strong>Name</strong><br />
-    Affiliation<br />
-    <a href="mailto:name@example.org">name@example.org</a>
+    <strong>Jordi Jofre-Monseny</strong><br />
+    Universitat de Barcelona<br />
+    <a href="mailto:jordi.jofre@ub.edu">jordi.jofre@ub.edu</a>
   </div>
   <div class="refs__item">
-    <strong>Name</strong><br />
-    Affiliation<br />
-    <a href="mailto:name@example.org">name@example.org</a>
+    <strong>Andreu Arenas-Jal</strong><br />
+    Universitat de Barcelona<br />
+    <a href="mailto:andreu.arenas@ub.edu">andreu.arenas@ub.edu</a>
+  </div>
+  <div class="refs__item">
+    <strong>Mariona Segú</strong><br />
+    Université Paris 1 Panthéon-Sorbonne<br />
+    <a href="mailto:mariona.segu@univ-paris1.fr">mariona.segu@univ-paris1.fr</a>
   </div>
 </div>
-{% endcomment %}

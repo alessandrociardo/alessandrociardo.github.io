@@ -50,26 +50,26 @@ Job market paper
 </div>
 {% endif %}
 
-{% comment %}
-REFERENCES — hidden for now. To show them: delete the Liquid comment tag on the line above and the
-matching closing tag below, then fill in the names. Add or remove a "refs__item" block per referee.
-
 References
 ------
 
 <div class="refs">
   <div class="refs__item">
-    <strong>Name</strong><br />
-    Affiliation<br />
-    <a href="mailto:name@example.org">name@example.org</a>
+    <strong>Jordi Jofre-Monseny</strong><br />
+    Universitat de Barcelona<br />
+    <a href="mailto:jordi.jofre@ub.edu">jordi.jofre@ub.edu</a>
   </div>
   <div class="refs__item">
-    <strong>Name</strong><br />
-    Affiliation<br />
-    <a href="mailto:name@example.org">name@example.org</a>
+    <strong>Andreu Arenas-Jal</strong><br />
+    Universitat de Barcelona<br />
+    <a href="mailto:andreu.arenas@ub.edu">andreu.arenas@ub.edu</a>
+  </div>
+  <div class="refs__item">
+    <strong>Mariona Segú</strong><br />
+    Université Paris 1 Panthéon-Sorbonne<br />
+    <a href="mailto:mariona.segu@univ-paris1.fr">mariona.segu@univ-paris1.fr</a>
   </div>
 </div>
-{% endcomment %}
 
 Contact
 ------
