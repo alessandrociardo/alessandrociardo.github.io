@@ -1,6 +1,7 @@
 ---
 permalink: /
 title: "Alessandro Ciardo"
+seo_title: "Alessandro Ciardo | PhD Candidate in Economics"
 author_profile: true
 redirect_from:
   - /about/
